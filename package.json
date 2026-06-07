@@ -1,0 +1,17 @@
+{
+  "name": "auto-lecture",
+  "version": "1.0.0",
+  "main": "watch.js",
+  "scripts": {
+    "start": "node watch.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.60.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
