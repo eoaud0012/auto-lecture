@@ -95,7 +95,11 @@ skillflo /course/27918?productId=21159&tab=info
 - ⚠️ **Gemini Flash는 함정 문항(맥락 구분)에서 틀림.** 예: 생활사건=가족건강을 Flash가 오답. **Gemini Pro/Claude 추론이 더 정확.** 내용형 문항은 반드시 교차검증.
 
 ## 7. Discord 알림 / 자격증명 (모두 `.env.json`, git 제외)
-- **봇 토큰+채널 재사용**(다른 사내 프로젝트와 동일): `.env.json`의 `discordToken`·`discordChannelId`. 봇 REST API(`/channels/{id}/messages`)로 임베드 전송(웹훅 아님).
+- **봇 토큰 재사용**(다른 사내 프로젝트와 동일): `.env.json`의 `discordToken`·`discordChannelId`. 봇 REST API(`/channels/{id}/messages`)로 임베드 전송(웹훅 아님).
+- **전용 채널 = DW-자동화 서버 `#강의-알림`(1534095065293525073)** — 2026-08-04 `#일반`에서 분리.
+  이전엔 desk-router의 SR 승인 카드(사람이 버튼을 눌러야 하는 채널)와 같은 곳으로 보내 알림이 섞였다.
+  **채널 변경은 `.env.json`의 `discordChannelId` 한 줄**(코드 수정 불필요 — `watch.js`/`exam.js`/`submit.js`가
+  모두 이 값을 읽는다). 채널 지도 전체는 desk-router `OPERATIONS.md`「Discord 채널 지도」참조.
 - `geminiApiKey` 도 동일 키 재사용. (모든 값은 `.env.json`, git 제외)
 
 ## 8. 파일 구성
