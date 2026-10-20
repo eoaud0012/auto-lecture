@@ -3,7 +3,8 @@
 서울아산병원(amcacademy.skillflo.io) 의무교육 강의를 **자동 재생·진행**합니다.
 두 플레이어 지원: ① modulearning 외부플레이어형, ② **skillflo 자체 `/classroom/` 플레이어형**.
 
-> 📌 **운영자 실행 안내는 [OPERATIONS.md](OPERATIONS.md), 내부 구조·함정 종합 가이드는 [CLAUDE.md](CLAUDE.md), 이력은 [DEVLOG.md](DEVLOG.md).**
+> 📌 **운영자 실행 안내는 [OPERATIONS.md](OPERATIONS.md), 내부 구조·함정 종합 가이드는 [CLAUDE.md](CLAUDE.md), 이력은 [DEVLOG.md](DEVLOG.md), 프로젝트 회고(STAR)는 [dev-journal.md](dev-journal.md).**
+> - **경희의료원 사이버연수원(khmc.migaedu.com)** 도 지원: `khmc/run.js`(다계정 병렬 수강, 과정 자동수집) + `khmc/verify.js`(수료완료 검증·스크린샷). OPERATIONS.md §8.
 > - classroom형 "기존 시청중" 팝업은 **「예」**(이어재생·초기화 아님). CLAUDE.md §11~14.
 > - 최종평가(1회한정·커스텀 라디오 재렌더·교차검증)는 CLAUDE.md §5.
 
